@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Flex, Text, Link, Button, Box } from "@chakra-ui/core";
+import React from "react";
+import { Flex, Text, Link, Box } from "@chakra-ui/core";
 
 const NavLink = ({ children, ...props }) => (
   <Link
