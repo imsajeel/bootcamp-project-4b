@@ -5,6 +5,7 @@ import AboutAni from "../../animations/about.json";
 export default function About() {
   return (
     <div
+      className="flexWrapRes"
       style={{
         display: "flex",
         justifyContent: "center",
@@ -17,6 +18,11 @@ export default function About() {
       <Lottie
         options={{
           animationData: AboutAni,
+          loop: true,
+          autoplay: true,
+          rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+          },
         }}
         height={"100%"}
         width={"100%"}

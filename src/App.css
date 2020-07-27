@@ -102,7 +102,7 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 310px;
+  height: 307px;
   background: url(wave2.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,6 +129,9 @@ body::-webkit-scrollbar-thumb {
   .flexTopRes {
     flex-direction: column-reverse;
     /* flex-wrap: wrap; */
+  }
+  .flexWrapRes {
+    flex-wrap: wrap;
   }
   .onlyDesktop {
     display: none;
