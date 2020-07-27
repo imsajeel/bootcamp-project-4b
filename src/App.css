@@ -9,6 +9,7 @@ button {
   background-color: rgba(65, 161, 255, 0);
   border: 1px solid black;
   border-radius: 5px;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
