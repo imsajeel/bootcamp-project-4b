@@ -60,7 +60,15 @@ a {
   z-index: 1000;
 }
 
+.flexTopRes {
+  flex-direction: row;
+}
+
 @media only screen and (max-width: 600px) {
+  .flexTopRes {
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+  }
   .onlyDesktop {
     display: none;
   }
