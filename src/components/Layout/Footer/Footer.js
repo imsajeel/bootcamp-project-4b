@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaArrowRight } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -15,7 +15,12 @@ export default function Footer() {
         borderRadius: "5px 5px 0px 0px",
       }}
     >
-      <h2 style={{ flex: 1 }}>Hello World!</h2>
+      <div style={{ flex: 1 }}>
+        <h2>Hello World!</h2>
+        <p>
+          Developed by Sajeel Aalam <FaArrowRight />
+        </p>
+      </div>
       <div>
         <a
           style={{ color: "white" }}

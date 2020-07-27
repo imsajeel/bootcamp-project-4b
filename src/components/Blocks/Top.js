@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
 import Teamwork from "../../animations/teamwork.json";
-import { FaGithub, FaBriefcase } from "react-icons/fa";
+import { FaGithub, FaAngleRight } from "react-icons/fa";
 
 export default function Top() {
   return (
@@ -53,7 +53,7 @@ export default function Top() {
                 marginLeft: "20px",
               }}
             >
-              <FaBriefcase /> Portfloio
+              Get Started <FaAngleRight />
             </button>
           </div>
         </div>
