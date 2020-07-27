@@ -1,56 +1,70 @@
-import React from "react";
-import { Flex, Text, Link, Box } from "@chakra-ui/core";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import Drawer from "../../theme/Drawer";
 
-const NavLink = ({ children, ...props }) => (
-  <Link
-    height="100%"
-    px={2}
-    fontSize="lg"
-    color="white"
-    _hover={{ textDecor: "none" }}
-    {...props}
-  >
-    {children}
-  </Link>
-);
+const NavLink = ({ children, link, ...props }) => {
+  return (
+    <a
+      href={link}
+      style={{
+        textDecoration: "none",
+        fontWeight: "600",
+        margin: "10px",
+      }}
+    >
+      {children}
+    </a>
+  );
+};
+
+const NavMenu = ({ children, drawer, setDrawer }) => {
+  return (
+    <div>
+      <div className="onlyDesktop">{children}</div>
+      <div className="onlyMobile" style={{ fontSize: "1.3em" }}>
+        <div
+          className="customHover"
+          style={{ cursor: "pointer", padding: "10px" }}
+          onClick={() => {
+            setDrawer(true);
+          }}
+        >
+          <FaBars />
+        </div>
+      </div>
+      <Drawer title="Main Menu" status={drawer} onClose={setDrawer}>
+        {children}
+      </Drawer>
+    </div>
+  );
+};
 
 const Header = () => {
+  const [drawer, setDrawer] = useState(false);
+
   return (
-    <Flex
-      bgImage="linear-gradient(90deg, rgba(65,161,255,1) 0%, rgba(54,123,241,1) 100%)"
-      justifyContent="center"
-      maxW="100%"
-      px={4}
-      py={3}
+    <header
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(65,161,255,1) 0%, rgba(54,123,241,1) 100%)",
+        color: "white",
+        padding: "1rem 2rem",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <Flex justifyContent="center" alignItems="center">
-        <Text pl={3} fontSize="xl" fontWeight="bold" color="white">
-          Hello Cloud!
-        </Text>
-      </Flex>
-      <Flex
-        display={{ xs: "none", md: "flex" }}
-        justify="center"
-        align="center"
-      >
-        <NavLink href="/#" ml="0.5rem">
-          Home
-        </NavLink>
-        <NavLink href="/#" ml="0.5rem">
-          Home
-        </NavLink>
-        <NavLink href="/#" ml="0.5rem">
-          Home
-        </NavLink>
-        <NavLink href="/#" ml="0.5rem">
-          Home
-        </NavLink>
-        <NavLink href="/#" ml="0.5rem">
-          Home
-        </NavLink>
-      </Flex>
-      <Box display={{ xs: "flex", md: "none" }}>H</Box>
-    </Flex>
+      <div style={{ flex: 1, fontSize: "1.5rem", fontWeight: 600 }}>
+        Hello World!
+      </div>
+
+      <NavMenu drawer={drawer} setDrawer={setDrawer}>
+        <NavLink link="dsa">About</NavLink>
+        <NavLink link="dsa">Courses</NavLink>
+        <NavLink link="dsa">Contact</NavLink>
+        <button className="primary">Buy</button>
+      </NavMenu>
+    </header>
   );
 };
 
