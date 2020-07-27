@@ -8,6 +8,9 @@ function App() {
   return (
     <Layout>
       <Top />
+      <div style={{ height: "300px" }}>
+        <h1>Welcome</h1>
+      </div>
       <Services />
     </Layout>
   );

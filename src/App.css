@@ -64,6 +64,34 @@ a {
   flex-direction: row;
 }
 
+/* Wave */
+
+.pattern {
+  position: relative;
+  background-color: rgb(30, 82, 134);
+  background-image: linear-gradient(
+    90deg,
+    rgba(65, 161, 255, 1) 0%,
+    rgba(54, 123, 241, 1) 100%
+  );
+  height: 95vh;
+  max-height: 800px;
+}
+
+.pattern:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 215px;
+  background: url(wave3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*  */
+/* Media Query */
 @media only screen and (max-width: 600px) {
   .flexTopRes {
     flex-direction: column-reverse;
