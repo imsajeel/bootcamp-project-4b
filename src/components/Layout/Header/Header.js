@@ -10,6 +10,9 @@ const NavLink = ({ children, link, ...props }) => {
         textDecoration: "none",
         fontWeight: "600",
         margin: "10px",
+        color: "white",
+        paddingBottom: "5px",
+        borderBottom: "2px solid white",
       }}
     >
       {children}
@@ -60,9 +63,10 @@ const Header = () => {
 
       <NavMenu drawer={drawer} setDrawer={setDrawer}>
         <NavLink link="dsa">About</NavLink>
+        <NavLink link="dsa">Services</NavLink>
         <NavLink link="dsa">Courses</NavLink>
         <NavLink link="dsa">Contact</NavLink>
-        <button className="primary">Buy</button>
+        <button className="primary white">Buy</button>
       </NavMenu>
     </header>
   );

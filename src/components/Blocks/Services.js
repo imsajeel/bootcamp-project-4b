@@ -29,9 +29,11 @@ export default function Services() {
   return (
     <div
       style={{
-        background: "rgb(243, 243, 243)",
+        background: "rgb(240, 240, 240)",
         textAlign: "center",
         padding: "2rem",
+        margin: "1rem",
+        borderRadius: "1rem",
       }}
     >
       <h1>Services</h1>

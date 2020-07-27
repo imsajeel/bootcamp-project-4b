@@ -30,7 +30,6 @@ const Drawer = ({ children, status, onClose, title }) => {
       style={{
         display: status ? "flex" : "none",
         flexDirection: "column",
-        borderTop: "1rem solid rgba(54, 123, 241, 1)",
       }}
       ref={ref}
     >

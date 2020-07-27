@@ -1,10 +1,9 @@
 import React from "react";
-import Lottie from "react-lottie";
-import Teamwork from "../../animations/teamwork.json";
 
-export default function Top() {
+export default function About() {
   return (
-    <div className="pattern">
+    <div>
+      <h1>About</h1>
       <div
         className="flexTopRes"
         style={{
@@ -12,8 +11,6 @@ export default function Top() {
           justifyContent: "center",
           alignItems: "center",
           padding: "1rem 2rem",
-          color: "white",
-          // background: "red",
         }}
       >
         <div
@@ -25,18 +22,6 @@ export default function Top() {
         >
           <h1>Lorem ipsum dolor sit amet</h1>
         </div>
-        <Lottie
-          options={{
-            animationData: Teamwork,
-          }}
-          height={"100%"}
-          width={"100%"}
-          style={{
-            width: "100%",
-            height: "100%",
-            maxWidth: "700px",
-          }}
-        />
       </div>
     </div>
   );
