@@ -12,7 +12,7 @@ export default function Message() {
         // borderRadius: "1rem",
       }}
     >
-      <h1 style={{ margin: 0 }}>"Message of the day goes here"</h1>
+      <h1 style={{ margin: 0 }}>"Message of the day."</h1>
       <label>
         <i>~Auther</i>
       </label>

@@ -1,10 +1,11 @@
 import React from "react";
 import Lottie from "react-lottie";
-import umbrella from "../../animations/umbrella.json";
-import scan from "../../animations/scan.json";
-import fallingParcel from "../../animations/fallingParcel.json";
+import WebAni from "../../animations/courses/web.json";
+import VideoAni from "../../animations/courses/video-editing.json";
+import GraphicAni from "../../animations/courses/graphic-design.json";
+import ProgrammingAni from "../../animations/courses/programming.json";
 
-const Card = ({ children, icon, title }) => {
+const Card = ({ children, icon, title, special, price }) => {
   return (
     <div
       className="card"
@@ -14,26 +15,31 @@ const Card = ({ children, icon, title }) => {
         maxWidth: "300px",
       }}
     >
-      <Lottie
-        options={{
-          animationData: icon,
-        }}
-        height={"100%"}
-        width={"100%"}
-        style={{
-          width: "100%",
-          height: "100%",
-          maxWidth: "700px",
-        }}
-      />
+      <div style={{ height: "400px" }}>
+        <Lottie
+          options={{
+            animationData: icon,
+          }}
+          height={"100%"}
+          width={"100%"}
+          style={{
+            width: "100%",
+            height: "100%",
+            maxWidth: "700px",
+          }}
+        />
+      </div>
       <label className="title">{title}</label>
-      <label className="special">NEW</label>
+      {special ? (
+        <label className="special">{special.toUpperCase()}</label>
+      ) : (
+        ""
+      )}
       <br />
       <label>
-        Price: <b>${999}</b>
+        Price: <b>{price ? `$${price}` : "N/A"}</b>
       </label>
-      {Array(5).map((item) => console.log(item))}
-      <div style={{ marginTop: "5px", color: "rgba(65, 161, 200, 1)" }}></div>
+      <p>{children}</p>
     </div>
   );
 };
@@ -58,19 +64,33 @@ export default function Courses() {
             marginTop: "2rem",
           }}
         >
-          <Card title="Lorem ipsum" icon={scan}>
+          <Card
+            title="Full-stack web developer"
+            special="best"
+            price={175}
+            icon={WebAni}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
             luctus erat.
           </Card>
-          <Card title="Lorem ipsum" icon={fallingParcel}>
+          <Card title="Video Editing" price={99} special="new" icon={VideoAni}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
             luctus erat.
           </Card>
-          <Card title="Lorem ipsum" icon={umbrella}>
+          <Card
+            title="Graphic Designing"
+            special="coming soon"
+            icon={GraphicAni}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
             luctus erat.
           </Card>
-          <Card title="Lorem ipsum" icon={umbrella}>
+          <Card
+            title="Programming with C"
+            special="featured"
+            price={199}
+            icon={ProgrammingAni}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis
             luctus erat.
           </Card>
