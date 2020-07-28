@@ -10,7 +10,7 @@ export default function About() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "0 1rem 1rem 2rem",
+        padding: "5rem 2rem",
         flexDirection: "row",
         // background: "red",
       }}

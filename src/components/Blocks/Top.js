@@ -14,6 +14,7 @@ export default function Top() {
           alignItems: "center",
           padding: "1rem 2rem",
           color: "white",
+          height: "calc(100vh - 100px)",
           // background: "red",
         }}
       >
