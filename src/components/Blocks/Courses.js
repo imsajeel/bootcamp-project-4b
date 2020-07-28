@@ -8,6 +8,7 @@ import ProgrammingAni from "../../animations/courses/programming.json";
 const Card = ({ children, icon, title, special, price }) => {
   return (
     <div
+      id="courses"
       className="card"
       style={{
         margin: "auto",

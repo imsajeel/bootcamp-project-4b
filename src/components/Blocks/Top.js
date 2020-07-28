@@ -7,6 +7,7 @@ export default function Top() {
   return (
     <div className="pattern">
       <div
+        id="top"
         className="flexTopRes"
         style={{
           display: "flex",
@@ -49,17 +50,19 @@ export default function Top() {
                 <FaGithub /> Github
               </button>
             </a>
-            <button
-              className="primary white"
-              style={{
-                marginTop: "1.5rem",
-                fontSize: "1.2rem",
-                padding: "10px",
-                marginLeft: "20px",
-              }}
-            >
-              Get Started <FaAngleRight />
-            </button>
+            <a href="#courses">
+              <button
+                className="primary white"
+                style={{
+                  marginTop: "1.5rem",
+                  fontSize: "1.2rem",
+                  padding: "10px",
+                  marginLeft: "20px",
+                }}
+              >
+                Get Started <FaAngleRight />
+              </button>
+            </a>
           </div>
         </div>
         <Lottie

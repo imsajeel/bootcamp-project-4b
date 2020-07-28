@@ -5,6 +5,7 @@ import AboutAni from "../../animations/about.json";
 export default function About() {
   return (
     <div
+      id="about"
       className="flexWrapRes"
       style={{
         display: "flex",

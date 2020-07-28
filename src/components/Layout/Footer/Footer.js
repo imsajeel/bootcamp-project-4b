@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaArrowRight, FaAngleUp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -27,6 +27,9 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <FaGithub style={{ fontSize: "3rem" }} />
+        </a>
+        <a style={{ color: "white" }} href="#header">
+          <FaAngleUp style={{ marginLeft: "10px", fontSize: "3rem" }} />
         </a>
       </div>
     </footer>

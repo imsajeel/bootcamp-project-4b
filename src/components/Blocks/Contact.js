@@ -20,6 +20,7 @@ export default function Contact() {
 
   return (
     <div
+      id="contact"
       className="flexWrapRes"
       style={{
         display: "flex",

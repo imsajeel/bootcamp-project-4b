@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Drawer from "../../theme/Drawer";
 
-const NavLink = ({ children, link, ...props }) => {
+const NavLink = ({ children, href, ...props }) => {
   return (
     <a
-      href={link}
+      href={href}
       style={{
         textDecoration: "none",
         fontWeight: "600",
@@ -47,6 +47,7 @@ const Header = () => {
 
   return (
     <header
+      id="header"
       style={{
         background:
           "linear-gradient(90deg, rgba(65,161,255,1) 0%, rgba(54,123,241,1) 100%)",
@@ -62,10 +63,12 @@ const Header = () => {
       </div>
 
       <NavMenu drawer={drawer} setDrawer={setDrawer}>
-        <NavLink link="dsa">About</NavLink>
-        <NavLink link="dsa">Services</NavLink>
-        <NavLink link="dsa">Courses</NavLink>
-        <button className="primary white">Contact</button>
+        <NavLink href="#about">About</NavLink>
+        <NavLink href="#services">Services</NavLink>
+        <NavLink href="#courses">Courses</NavLink>
+        <a href="#contact">
+          <button className="primary white">Contact</button>
+        </a>
       </NavMenu>
     </header>
   );

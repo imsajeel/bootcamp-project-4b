@@ -28,6 +28,7 @@ const Card = ({ children, icon, title }) => {
 export default function Services() {
   return (
     <div
+      id="services"
       style={{
         background: "rgb(240, 240, 240)",
         textAlign: "center",
