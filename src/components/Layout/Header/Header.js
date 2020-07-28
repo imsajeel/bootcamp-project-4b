@@ -65,8 +65,7 @@ const Header = () => {
         <NavLink link="dsa">About</NavLink>
         <NavLink link="dsa">Services</NavLink>
         <NavLink link="dsa">Courses</NavLink>
-        <NavLink link="dsa">Contact</NavLink>
-        <button className="primary white">Buy</button>
+        <button className="primary white">Contact</button>
       </NavMenu>
     </header>
   );
