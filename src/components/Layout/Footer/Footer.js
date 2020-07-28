@@ -9,9 +9,6 @@ export default function Footer() {
           "linear-gradient(90deg, rgba(65,161,255,1) 0%, rgba(54,123,241,1) 100%)",
         color: "white",
         padding: "3rem 3rem",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         borderRadius: "5px 5px 0px 0px",
       }}
     >
@@ -21,6 +18,7 @@ export default function Footer() {
           Developed by Sajeel Aalam <FaArrowRight />
         </p>
       </div>
+
       <div>
         <a
           style={{ color: "white" }}

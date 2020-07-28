@@ -146,8 +146,21 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  footer > * {
+    margin-top: 10px;
+  }
+
   .flexTopRes {
     flex-direction: column-reverse;
     /* flex-wrap: wrap; */
