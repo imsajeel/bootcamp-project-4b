@@ -6,6 +6,7 @@ import Services from "./components/Blocks/Services";
 import About from "./components/Blocks/About";
 import Contact from "./components/Blocks/Contact";
 import Courses from "./components/Blocks/Courses";
+import Message from "./components/Blocks/Message";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Services />
       <Courses />
+      <Message />
       <Contact />
     </Layout>
   );
