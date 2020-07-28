@@ -4,8 +4,6 @@ import umbrella from "../../animations/umbrella.json";
 import scan from "../../animations/scan.json";
 import fallingParcel from "../../animations/fallingParcel.json";
 
-import { FaStar } from "react-icons/fa";
-
 const Card = ({ children, icon, title }) => {
   return (
     <div
