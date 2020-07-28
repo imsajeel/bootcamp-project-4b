@@ -58,7 +58,16 @@ const Drawer = ({ children, status, onClose, title }) => {
         <h2>{title}</h2>
         {children.map((item, index) => {
           return (
-            <div style={{ marginTop: "1rem" }} key={index}>
+            <div
+              key={index}
+              style={{ marginTop: "1rem" }}
+              onClick={() => {
+                setTimeout(function () {
+                  onClose(false);
+                }, 900);
+                getAnimation().reverse();
+              }}
+            >
               {item} <br />
             </div>
           );
