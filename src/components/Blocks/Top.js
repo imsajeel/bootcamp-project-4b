@@ -15,7 +15,6 @@ export default function Top() {
           padding: "1rem 2rem",
           color: "white",
           height: "calc(100vh - 100px)",
-          // background: "red",
         }}
       >
         <div
@@ -23,7 +22,6 @@ export default function Top() {
             margin: "auto",
             width: "100%",
             textAlign: "center",
-            // maxWidth: "300px",
           }}
         >
           <h1>Lorem ipsum dolor sit amet</h1>

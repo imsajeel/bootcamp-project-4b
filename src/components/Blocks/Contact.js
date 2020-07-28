@@ -27,7 +27,6 @@ export default function Contact() {
         alignItems: "center",
         padding: "5rem 2rem",
         flexDirection: "row",
-        // background: "red",
       }}
     >
       <Lottie
@@ -52,7 +51,6 @@ export default function Contact() {
           margin: "auto",
           width: "100%",
           textAlign: "center",
-          // maxWidth: "300px",
         }}
       >
         <h1>Join us</h1>
