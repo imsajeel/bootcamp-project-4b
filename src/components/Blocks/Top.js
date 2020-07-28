@@ -33,16 +33,22 @@ export default function Top() {
             blandit purus hendrerit. Fusce in iaculis turpis.
           </p>
           <div>
-            <button
-              className="primary white"
-              style={{
-                marginTop: "1.5rem",
-                fontSize: "1.2rem",
-                padding: "10px",
-              }}
+            <a
+              href="https://github.com/imsajeel/bootcamp-project-4b"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <FaGithub /> Github
-            </button>
+              <button
+                className="primary white"
+                style={{
+                  marginTop: "1.5rem",
+                  fontSize: "1.2rem",
+                  padding: "10px",
+                }}
+              >
+                <FaGithub /> Github
+              </button>
+            </a>
             <button
               className="primary white"
               style={{
